@@ -1,10 +1,12 @@
 package net.jetensky.trollhammer.dao;
 
 import net.jetensky.trollhammer.dto.Portal;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class PortalDao {
 
     long id=0;
