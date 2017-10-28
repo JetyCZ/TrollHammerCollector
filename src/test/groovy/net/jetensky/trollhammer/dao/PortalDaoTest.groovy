@@ -7,17 +7,20 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.ContextConfiguration
 import spock.lang.Specification
 
+import javax.transaction.Transactional
+
 @SpringBootTest
 @ContextConfiguration(classes = Application)
 class PortalDaoTest extends Specification {
 
     @Autowired PortalDao portalDao
 
-    def "Get"() {
+    @Transactional
+    def "getOne"() {
         def portal = new Portal()
         when:
             portalDao.save(portal)
-            def read = portalDao.get(portal.getId())
+            def read = portalDao.getOne(portal.getId())
 
         then:
             read != null

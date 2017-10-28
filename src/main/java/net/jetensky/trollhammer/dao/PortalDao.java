@@ -1,15 +1,13 @@
 package net.jetensky.trollhammer.dao;
 
 import net.jetensky.trollhammer.dto.Portal;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @Component
-public class PortalDao {
+public interface PortalDao extends JpaRepository<Portal, Long> {
 
-    long id=0;
+    /*long id=0;
     Map<Long, Portal> db = new HashMap<>();
 
     public Portal get(Long id) {
@@ -20,5 +18,5 @@ public class PortalDao {
         portal.setId(id);
         db.put(id, portal);
         id++;
-    }
+    }*/
 }
