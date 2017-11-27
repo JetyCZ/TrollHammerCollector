@@ -1,22 +1,16 @@
 package net.jetensky.trollhammer.dao.datafactory;
 
-import org.apache.commons.beanutils.PropertyUtils;
-import org.apache.commons.lang.reflect.FieldUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
-
-import javax.persistence.Entity;
-import java.lang.reflect.Field;
-import java.util.List;
-import java.util.Map;
 
 @Component
 public class Creator implements ApplicationContextAware{
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        
+    }
      /*
     Log log = LogFactory.getLog(Creator.class);
 
