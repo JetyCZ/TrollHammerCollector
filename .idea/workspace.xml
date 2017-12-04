@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="0373974a-89cb-4f5e-83d5-2b4fd1d14b9e" name="DoNotCommit" comment="" />
-    <list default="true" id="6069f720-ae62-4476-83c3-6209b8d4a232" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/ICompanyJpaRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Company.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/PortalTestDataFactory.groovy" />
+    <list default="true" id="6069f720-ae62-4476-83c3-6209b8d4a232" name="Default" comment="JDBC url to heroku trollkillerdb">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceWithCreatorTest.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/Creator.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/net/jetensky/trollhammer/dao/IPortalJpaRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/net/jetensky/trollhammer/services/PortalService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDao.groovy" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/ICompanyJpaRepository.java" afterPath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/CompanyDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/IPortalJpaRepository.java" afterPath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/PortalDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/net/jetensky/trollhammer/dto/Portal.class" afterPath="$PROJECT_DIR$/out/production/classes/net/jetensky/trollhammer/dto/Portal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/net/jetensky/trollhammer/services/PortalService.class" afterPath="$PROJECT_DIR$/out/production/classes/net/jetensky/trollhammer/services/PortalService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/TrollHammerCollector_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/TrollHammerCollector_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/TrollHammerCollector_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/TrollHammerCollector_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/application.properties" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Company.java" afterPath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Company.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Portal.java" afterPath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Portal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/services/PortalService.java" afterPath="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/services/PortalService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDaoTest.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDaoTest.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceTest.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceTest.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/PortalTestDataFactory.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/PortalTestDataFactory.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -127,12 +134,12 @@
       <file leaf-file-name="PortalService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/services/PortalService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="252">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,8 +148,8 @@
       <file leaf-file-name="PortalServiceTest.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="527">
+              <caret line="37" column="10" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
               <folding>
                 <element signature="e#43#86#0" expanded="true" />
               </folding>
@@ -150,53 +157,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortalTestDataFactory.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/PortalTestDataFactory.groovy">
+      <file leaf-file-name="Creator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/Creator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-              <folding>
-                <element signature="e#51#108#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrudRepository.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.12.5.RELEASE/d500f5b43154adf581a966796c8ead62e70b5e5e/spring-data-commons-1.12.5.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortalDao.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDao.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPortalJpaRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/IPortalJpaRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="216">
+              <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -204,11 +169,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ICompanyJpaRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/ICompanyJpaRepository.java">
+      <file leaf-file-name="FieldUtils.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/d2a489573c0ed2c4942b3660decad5d65087b406/commons-lang3-3.3.2-sources.jar!/org/apache/commons/lang3/reflect/FieldUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="618" column="125" lean-forward="true" selection-start-line="618" selection-start-column="125" selection-end-line="618" selection-end-column="125" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PortalDaoTest.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDaoTest.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="43" />
+              <folding>
+                <element signature="e#38#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PortalServiceWithCreatorTest.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceWithCreatorTest.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+              <folding>
+                <element signature="e#43#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PortalDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/PortalDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompanyDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/CompanyDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+              <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -217,15 +228,11 @@
       <file leaf-file-name="Portal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Portal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="72">
+              <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
               <folding>
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,8 +241,8 @@
       <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="40" column="53" lean-forward="true" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+            <state relative-caret-position="288">
+              <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -483,8 +490,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="7513482538000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2075838188" />
+        <entry key="$PROJECT_DIR$" value="7514083509000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1479019233" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="300875114" />
         <entry key="$PROJECT_DIR$/../hooyu/admin" value="1472467900849" />
         <entry key="$PROJECT_DIR$/../hooyu/backoffice" value="1478177219034" />
@@ -649,15 +656,19 @@
         <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/IPortalJpaRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/Application.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDaoTest.groovy" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/datafactory/Creator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/ICompanyJpaRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Portal.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/services/PortalService.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/PortalTestDataFactory.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceTest.groovy" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Portal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Company.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/CompanyDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/PortalDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/Creator.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceWithCreatorTest.groovy" />
       </list>
     </option>
   </component>
@@ -690,9 +701,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -874,6 +882,32 @@
             <path>
               <item name="TrollHammerCollector" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.commons:commons-lang3:3.3.2" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="TrollHammerCollector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.commons:commons-lang3:3.3.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-lang3-3.3.2.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrollHammerCollector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.commons:commons-lang3:3.3.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-lang3-3.3.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="lang3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrollHammerCollector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.apache.commons:commons-lang3:3.3.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-lang3-3.3.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="lang3" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrollHammerCollector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Gradle: org.springframework.data:spring-data-commons:1.12.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
@@ -1014,6 +1048,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1038,20 +1075,22 @@
       <recent name="net.jetensky.trollhammer.dao" />
       <recent name="net.jetensky.trollhammercollector.dao" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="net.jetensky.trollhammer.services.factory" />
-      <recent name="net.jetensky.trollhammer.dao" />
-      <recent name="net.jetensky.trollhammer.dto" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="net.jetensky.trollhammer.dao" />
-      <recent name="net.jetensky.trollhammer.dto" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="spock.lang.Specification" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.jetensky.trollhammer.services" />
+      <recent name="net.jetensky.trollhammer.services.factory" />
+      <recent name="net.jetensky.trollhammer.dao" />
+      <recent name="net.jetensky.trollhammer.dto" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="net.jetensky.trollhammer.services.factory" />
+      <recent name="net.jetensky.trollhammer.dao" />
+      <recent name="net.jetensky.trollhammer.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1066,26 +1105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PortalServiceTest">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="net.jetensky.trollhammer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="net.jetensky.trollhammer.Application" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="TrollHammerCollector_main" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="JUnit.PortalServiceWithCreatorTest.Hello">
     <configuration name="PortalDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1211,6 +1231,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="PortalServiceWithCreatorTest.Hello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="net.jetensky.trollhammer.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TrollHammerCollector_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="net.jetensky.trollhammer.services" />
+      <option name="MAIN_CLASS_NAME" value="net.jetensky.trollhammer.services.PortalServiceWithCreatorTest" />
+      <option name="METHOD_NAME" value="Hello" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -1291,18 +1336,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.PortalDaoTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Application" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PortalDaoTest.saved portal can be read" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PortalServiceTest.Hello" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PortalServiceTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PortalDaoTest.saved portal can be read" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PortalServiceTest.Hello" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PortalServiceTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PortalServiceWithCreatorTest.Hello" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PortalServiceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PortalServiceTest.Hello" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PortalDaoTest.saved portal can be read" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PortalDaoTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Application" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PortalServiceWithCreatorTest.Hello" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PortalServiceTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PortalServiceTest.Hello" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PortalDaoTest.saved portal can be read" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PortalDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1398,73 +1443,80 @@
       <option name="project" value="LOCAL" />
       <updated>1511793439096</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="JDBC url to heroku trollkillerdb">
+      <created>1511797953202</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1511797953202</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PortalServiceTest - 2017.11.27 at 16h 40m 53s.xml">
-      <configuration name="PortalServiceTest" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 42m 22s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortalServiceTest - 2017.11.27 at 16h 41m 58s.xml">
-      <configuration name="PortalServiceTest" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 42m 52s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortalServiceTest - 2017.11.27 at 16h 44m 31s.xml">
-      <configuration name="PortalServiceTest" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 44m 09s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortalServiceTest - 2017.11.27 at 16h 45m 12s.xml">
-      <configuration name="PortalServiceTest" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 46m 05s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortalServiceTest - 2017.11.27 at 16h 48m 42s.xml">
-      <configuration name="PortalServiceTest" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 47m 42s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortalServiceTest - 2017.11.27 at 16h 49m 47s.xml">
-      <configuration name="PortalServiceTest" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 50m 16s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortalServiceTest_Hello - 2017.11.27 at 16h 21m 04s.xml">
-      <configuration name="PortalServiceTest.Hello" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 50m 36s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortalServiceTest_Hello - 2017.11.27 at 16h 24m 26s.xml">
-      <configuration name="PortalServiceTest.Hello" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 53m 33s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortalServiceTest_Hello - 2017.11.27 at 16h 32m 26s.xml">
-      <configuration name="PortalServiceTest.Hello" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 55m 15s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortalServiceTest_Hello - 2017.11.27 at 16h 32m 43s.xml">
-      <configuration name="PortalServiceTest.Hello" configurationId="JUnit" />
+    <history-entry file="PortalServiceWithCreatorTest_Hello - 2017.12.04 at 14h 56m 28s.xml">
+      <configuration name="PortalServiceWithCreatorTest.Hello" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.497006" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.497006" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.16424294" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="395" y="414" width="745" height="509" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2910995" sideWeight="0.8357571" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44160178" sideWeight="0.8357571" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.49101797" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19267015" sideWeight="0.49016252" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19162303" sideWeight="0.49016252" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12769486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118297406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.050304037" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Panda Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12548369" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12489307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39895287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3748691" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="395" y="414" width="745" height="509" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1529,42 +1581,17 @@
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/services/PortalService.java</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/1.4.2.RELEASE/b852ea0b651d58116a319f8b2510b1ec0f919fae/spring-boot-test-1.4.2.RELEASE-sources.jar!/org/springframework/boot/test/context/SpringBootTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/Portal2DaoTest.groovy" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <marker date="1511793381898" expanded="true" signature="406:1024" ph="{...}" />
-            <marker date="1511793381898" expanded="true" signature="1022:1024" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1638,7 +1665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="553" column="13" lean-forward="false" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1661,7 +1687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1669,7 +1694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1677,7 +1701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1701,25 +1724,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/datafactory/Creator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.12.5.RELEASE/d500f5b43154adf581a966796c8ead62e70b5e5e/spring-data-commons-1.12.5.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/PortalTestDataFactory.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="e#51#97#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="297">
+          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="37" column="10" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
           <folding>
-            <marker date="1511793381898" expanded="true" signature="406:1024" ph="{...}" />
-            <marker date="1511793381898" expanded="true" signature="1022:1024" ph="{...}" />
+            <element signature="e#43#86#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/datafactory/Creator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Portal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="72">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDao.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1734,115 +1823,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDao.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/CompanyDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/IPortalJpaRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/PortalDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="37" />
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dao/ICompanyJpaRepository.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/d2a489573c0ed2c4942b3660decad5d65087b406/commons-lang3-3.3.2-sources.jar!/org/apache/commons/lang3/reflect/FieldUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+        <state relative-caret-position="170">
+          <caret line="618" column="125" lean-forward="true" selection-start-line="618" selection-start-column="125" selection-end-line="618" selection-end-column="125" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Company.java">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/Creator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="40" column="53" lean-forward="true" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.12.5.RELEASE/d500f5b43154adf581a966796c8ead62e70b5e5e/spring-data-commons-1.12.5.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/services/PortalService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="252">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jetensky/trollhammer/dto/Portal.java">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceWithCreatorTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/PortalServiceTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="306">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
           <folding>
             <element signature="e#43#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/services/factory/PortalTestDataFactory.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="e#51#108#0" expanded="true" />
           </folding>
         </state>
       </provider>

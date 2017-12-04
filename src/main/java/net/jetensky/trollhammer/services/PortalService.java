@@ -1,6 +1,6 @@
 package net.jetensky.trollhammer.services;
 
-import net.jetensky.trollhammer.dao.IPortalJpaRepository;
+import net.jetensky.trollhammer.dao.PortalDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class PortalService {
 
     @Autowired
-    private IPortalJpaRepository portalDao;
+    private PortalDAO portalDao;
 
     public String hello (Long portalId) {
         return "hello " + portalDao.getOne(portalId).getTitle();

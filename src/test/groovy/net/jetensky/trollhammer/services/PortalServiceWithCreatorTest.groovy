@@ -1,9 +1,8 @@
 package net.jetensky.trollhammer.services
 
 import net.jetensky.trollhammer.Application
-import net.jetensky.trollhammer.dao.PortalDAO
 import net.jetensky.trollhammer.dto.Portal
-import net.jetensky.trollhammer.services.factory.PortalTestDataFactory
+import net.jetensky.trollhammer.services.factory.Creator
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.ContextConfiguration
@@ -12,28 +11,29 @@ import spock.lang.Specification
 
 @SpringBootTest
 @ContextConfiguration(classes = Application)
-class PortalServiceTest extends Specification {
-    @Autowired
-    PortalDAO portalDao;
+class PortalServiceWithCreatorTest extends Specification {
 
-    @Autowired PortalTestDataFactory portalTestDataFactory
-
-    @Autowired
-    PortalService portalService;
-
+    @Autowired Creator creator
+    @Autowired PortalService portalService
 
     @Transactional
     def "Hello"() {
         def testTitle = "iDnes"
         given:
-        long id = portalTestDataFactory.save(new Portal(title: testTitle))
+        long id = creator.save(
+                new Portal(title: testTitle)
+        )
 
-    when:
+        when:
         def returnVal = portalService.hello(id)
-    then:
+        def portal = portalService.portalDao.getOne(id)
+
+        then:
         returnVal == "hello " + testTitle
+        portal.title == testTitle
 
 
-        
+
     }
+
 }

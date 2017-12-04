@@ -13,7 +13,7 @@ import spock.lang.Specification
 class PortalDaoTest extends Specification {
 
     @Autowired
-    IPortalJpaRepository portalDao;
+    PortalDAO portalDao;
 
     @Transactional
     def "saved portal can be read"() {

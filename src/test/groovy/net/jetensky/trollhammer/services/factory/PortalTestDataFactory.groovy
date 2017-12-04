@@ -1,7 +1,7 @@
 package net.jetensky.trollhammer.services.factory
 
-import net.jetensky.trollhammer.dao.ICompanyJpaRepository
-import net.jetensky.trollhammer.dao.IPortalJpaRepository
+import net.jetensky.trollhammer.dao.CompanyDAO
+import net.jetensky.trollhammer.dao.PortalDAO
 import net.jetensky.trollhammer.dto.Company
 import net.jetensky.trollhammer.dto.Portal
 import org.springframework.beans.factory.annotation.Autowired
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Component
 @Component
 class PortalTestDataFactory {
     @Autowired
-    IPortalJpaRepository portalDao;
+    PortalDAO portalDao;
 
     @Autowired
-    ICompanyJpaRepository companyJpaRepository;
+    CompanyDAO companyJpaRepository;
 
     long save() {
         Portal portal = new Portal()

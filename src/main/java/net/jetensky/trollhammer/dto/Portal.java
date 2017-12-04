@@ -14,7 +14,7 @@ public class Portal {
     private String title;
 
     @ManyToOne(optional = false)
-    private Company company;
+    public Company company;
 
     public Portal() {
     }
@@ -41,6 +41,10 @@ public class Portal {
 
     public void setCompany(Company company) {
         this.company = company;
+    }
+
+    public Company getCompany() {
+        return company;
     }
 
     @Override
