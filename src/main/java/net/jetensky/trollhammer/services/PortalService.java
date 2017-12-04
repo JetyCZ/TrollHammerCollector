@@ -11,6 +11,8 @@ public class PortalService {
     private IPortalJpaRepository portalDao;
 
     public String hello (Long portalId) {
+        String test;
+        
         return "hello " + portalDao.getOne(portalId).getTitle();
     }
 }
