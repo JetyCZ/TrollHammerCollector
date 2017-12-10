@@ -12,18 +12,18 @@ public class Company {
     @GeneratedValue(
             strategy = GenerationType.IDENTITY
     )
-    private long id;
+    private Long id;
 
     private String name;
 
     public Company() {
     }
 
-    public Company(long id) {
+    public Company(Long id) {
         this.id = id;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
