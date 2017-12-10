@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list id="0373974a-89cb-4f5e-83d5-2b4fd1d14b9e" name="DoNotCommit" comment="" />
     <list default="true" id="6069f720-ae62-4476-83c3-6209b8d4a232" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/net/jetensky/trollhammer/services/PortalService.class" afterPath="$PROJECT_DIR$/out/production/classes/net/jetensky/trollhammer/services/PortalService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDaoTest.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDaoTest.groovy" />
     </list>
@@ -169,8 +168,8 @@
       <file leaf-file-name="PortalDaoTest.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDaoTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="324">
+              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding>
                 <element signature="e#38#81#0" expanded="true" />
               </folding>
@@ -1360,7 +1359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512397174798</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Creator - auto test data factory">
+      <created>1512940217576</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1512940217576</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1502,7 +1508,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDaoTest.groovy</url>
-          <line>26</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -1818,8 +1824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/net/jetensky/trollhammer/dao/PortalDaoTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="324">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding>
             <element signature="e#38#81#0" expanded="true" />
           </folding>
