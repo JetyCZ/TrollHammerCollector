@@ -17,6 +17,7 @@ class PortalDaoTest extends Specification {
     IPortalJpaRepository portalDao;
 
     
+    
     @Autowired
     PortalTestDataFactory portalTestDataFactory;
 
